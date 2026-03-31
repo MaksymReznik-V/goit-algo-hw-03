@@ -3,7 +3,7 @@ import random
 #Створюємо список з випадковими, унікальними, впорядкованими числами
 def get_numbers_ticket(min, max, quantity):
     random_number = []
-    if min >= 1 and max <= 1_000 and min < quantity < max:
+    if min >= 1 and max <= 1_000 and 1 < quantity < max:
         while len(random_number) < quantity:
               gen_number = random.randint(min, max)
               if random_number.count(gen_number) == 0: 
